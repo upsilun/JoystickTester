@@ -1,0 +1,83 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#top-left, #top-right, #bottom-left, #bottom-right {
+    position: absolute;
+    padding: 20px;
+    border: 2px solid #fff;
+}
+
+#top-left {
+    top: 0;
+    left: 0;
+}
+
+#top-right {
+    top: 0;
+    right: 0;
+}
+
+#bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+#bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+#center-aim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
+.axis, .button {
+    margin: 10px;
+}
+
+.axis .slider {
+    width: 200px;
+    height: 10px;
+    background-color: #555;
+    position: relative;
+}
+
+.axis .slider .value {
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.button.pressed {
+    background-color: #fff;
+    color: #000;
+}
